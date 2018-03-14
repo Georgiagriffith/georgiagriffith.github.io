@@ -1,0 +1,36 @@
+
+
+body {
+
+  background-color: #aed5dd;
+
+width:400px;
+
+margin:auto;
+
+margin-top: auto;
+
+
+font-family: arial;}
+
+
+
+h1 {font-size: 45px; background-color: white; padding: inherit;
+}
+
+h2{text-align: center;
+
+text-transform: uppercase; }
+
+h3 {font-size: 50px}
+
+p{
+  font-family: sans-serif;
+
+  font-size: 20px;
+}
+
+
+
+
+blockquote {border: 2px; border-style: groove; text-align: center; margin: auto; padding: 80px; text-transform: uppercase;}
