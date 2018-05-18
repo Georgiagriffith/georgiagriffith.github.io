@@ -1,0 +1,189 @@
+
+/* GRADIENT */
+#grad1 {
+    height: 100%;
+    background: red; /* For browsers that do not support gradients */
+    background: linear-gradient(to right,#262626, white,white, #737373, white, #404040, white, white ); /* Standard syntax (must be last) */
+}
+
+/* Flip book */
+.shadow1{
+  position: absolute;
+  width: 500px;
+  left: 50%;
+  top: 150px;
+  height: 250px;
+  box-shadow: 6px 4px 10px 0px rgba(0,0,0, 0.7);
+}
+.shadow2{
+  position: absolute;
+  width: 500px;
+  left: 50%;
+  top: 150px;
+  height: 330px;
+  box-shadow: 6px 4px 10px 0px rgba(0,0,0, 0.7);
+}
+
+.hold{
+  width: 1000px;
+  margin: auto;
+  position: relative;
+  display: block;
+  height: 650px;
+}
+
+.shadow{
+  position: absolute;
+  width: 500px;
+  left: 50%;
+  top: 150px;
+  height: 450px;
+  box-shadow: 6px 4px 10px 0px rgba(0,0,0, 0.7);
+}
+
+.page-holder{
+  height: 600px;
+  width: 1000px;
+  position: absolute;
+  overflow: hidden;
+  cursor: pointer;
+/*   background: yellow; */
+}
+.page{
+  height: 200%;
+  width: 100%;
+  top: -50%;
+  left: 0%;
+  position: absolute;
+  overflow: hidden;
+  transform: rotateZ(-30deg);
+  transition: transform 1s, left 1s;
+  transform-origin: 100% 37.5%;
+}
+.page>.front,
+.page .back-holder,
+.page .back{
+  height: 200px;
+  width: 500px;
+  position: absolute;
+  background-size: cover;
+  transition: transform 1s, left 1s;
+  background-color: black;
+  color: white;
+}
+.page>.front{
+  top: 37.5%;
+  left: 50%;
+  transform: rotateZ(30deg) translateX(0);
+  transform-origin: 100% 0%;
+  box-shadow: inset 10px 0 10px -8px #000000;
+}
+.page .back-holder{
+  left: 100%;
+  top: 0;
+  transition: left 1s, transform 1s;
+  transform-origin: 0% 0%;
+  transform: rotateZ(-60deg);
+}
+.page .back{
+  left: 0%;
+  top: 0;
+  transform: rotateZ(0deg);
+  transform-origin: 0% 0%;
+  transition: top 1s, left 1s;
+  box-shadow: inset -15px 0 22px -10px #000000;
+}
+.page .back:after{
+  content: ' ';
+  position: absolute;
+  height: 100%;
+  transform: rotateZ(-0.7deg);
+  transform-origin: 0% 100%;
+  width: 100%;
+  box-shadow: 10px 8px 10px -1px rgba(0,0,0, 0.8);
+}
+.page-holder:hover .page{
+  transform: rotateZ(-0deg);
+  left: -50%;
+}
+.page-holder:hover .page>.front{
+  transform: rotateZ(0deg) translateX(100%);
+}
+.page-holder:hover .back-holder{
+  left: 0%;
+  transform: rotateZ(0deg);
+/*   transform: rotateZ(0deg);
+  top: 0; */
+}
+.page-holder:hover .back{
+  left: -100%;
+}
+/*   END of FLIP BOOK */
+
+
+/*   include this to format top menu bar font and size */
+html,body{font-family:Verdana,sans-serif;font-size:20px;line-height:1.5}html{overflow-x:hidden}
+
+
+
+h1 {width:700px;
+margin-top: 100px;
+width:700px;
+margin:auto;
+font-size: 35px;
+padding: inherit;
+color: white;
+background-color: black;
+font-family:"Segoe UI",Arial,sans-serif;font-weight:400;
+}
+
+h2
+{ text-align: left;
+width:700px;
+margin:auto;
+margin-top: 600px;
+margin:auto;
+margin-top: auto;
+font-family: Verdana,sans-serif;
+font-size:20px;line-height:1.5;
+background-color:#efd7e6 ;
+color: white;
+}
+
+
+
+p{
+width:700px;
+margin:auto;
+margin-top: auto;
+font-family: Verdana ;
+font-size: 20px;
+background-color: white ;
+}
+
+
+/*Top white menu bar */
+
+.w3-card,.w3-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.w3-wide{letter-spacing:4px}
+.w3-btn,.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+/**white nav bar box up top **/
+.w3-white,.w3-hover-white:hover{color:#000!important;background-color:#fff!important}
+/**menu background colour hover **/
+.w3-button:hover{color:#000!important;background-color:#ccc!important}
+/* Spacing of font in top bar */
+.w3-wide{letter-spacing:4px}
+
+.w3-margin{margin:16px!important}.w3-margin-top{margin-top:16px!important}.w3-margin-bottom{margin-bottom:16px!important}
+.w3-margin-left{margin-left:16px!important}.w3-margin-right{margin-right:16px!important}
+.w3-padding-small{padding:4px 8px!important}.w3-padding{padding:8px 16px!important}.w3-padding-large{padding:12px 24px!important}
+.w3-padding-16{padding-top:16px!important;padding-bottom:16px!important}.w3-padding-24{padding-top:24px!important;padding-bottom:24px!important}
+.w3-padding-32{padding-top:32px!important;padding-bottom:32px!important}.w3-padding-48{padding-top:48px!important;padding-bottom:48px!important}
+.w3-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.w3-left{float:left!important}.w3-right{float:right!important}
+
+
+
+
+
+blockquote {border: 2px; border-style: groove; text-align: center; margin: auto; padding: 80px; text-transform: uppercase;}

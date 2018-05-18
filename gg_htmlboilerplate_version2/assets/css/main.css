@@ -1,0 +1,49 @@
+body {
+background-color: white ;
+}
+.main img {
+
+  max-wdith:100%
+  padding:18px
+}
+
+
+
+.menu {
+position: fixed;
+left:0px;
+bottom:0px;
+z-index:2;
+font-size:20px;
+padding:10px;
+
+
+}
+
+.nav {
+  width:0%;
+  height:100vh;
+  position: fixed;
+  top:0px;
+  left: 0px;
+  background-color:yellow;
+  overflow: hidden;
+  transition: 0.2s;
+
+}
+
+.nav.active {
+  background-color: #efd7e6;
+  width:25%;
+  transition: 0.2s;
+}
+
+
+.button {
+
+  display: block;
+  border-bottom: 1px solid black;
+  padding:10px;
+  font-family: arial;
+  font-size: 23px;
+}
